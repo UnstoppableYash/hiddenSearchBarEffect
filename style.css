@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #101822;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.mainBox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchText{
+    width: 0rem;
+    border-radius: 5rem;
+    /* padding: 2.5rem; */
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s linear;
+}
+
+.button{
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: #ff4256;
+    color: #101822;
+    position: absolute;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.mainBox:hover > .searchText{
+    width: 35rem;
+    padding: 2.5rem;
+}
+
+.mainBox:hover > .button{
+    background-color: white;
+    color: #ff4256;
+}
